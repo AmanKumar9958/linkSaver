@@ -34,7 +34,17 @@ function addLinks(){
     const linksText = linkInput.value.trim();
     if(linksText === "") return;    // if input filed is empty..
 
-    const newLinks = {      // adding new links with id..
+
+    // checking duplicate links..
+    const isDuplicate = links.some(link => link.text === linksText);
+    if(isDuplicate){
+        alert("This link is already added!!");
+        linkInput.value = "";
+        return;
+    }
+
+    // adding new links with id..
+    const newLinks = {
         id: Date.now(),
         text: linksText
     }
