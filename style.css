@@ -32,6 +32,9 @@ html, body {
     padding: 20px;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
+    /* height: 60vh;
+    overflow-y: scroll;
+    scrollbar-width: none; */
 }
 
 /* Title Styling */
@@ -172,18 +175,4 @@ h2 {
     font-weight: bold;
     text-align: center;
     margin-bottom: 1.4rem;
-}
-#links-list li {
-    transition: all 0.2s;
-    cursor: grab;
-}
-
-#links-list li:active {
-    cursor: grabbing;
-}
-
-#links-list li.dragging {
-    opacity: 0.5;
-    background-color: #e0e0e0;
-    transform: scale(1.02); /* Slight enlargement while dragging */
 }
